@@ -8,6 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "compile": "node-sass scss -o dist",
     "watch-style": "node-sass -w scss -o dist"
   },
   "repository": {
