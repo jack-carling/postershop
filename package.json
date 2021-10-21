@@ -1,0 +1,24 @@
+{
+  "name": "postershop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "watch-style": "node-sass -w scss -o dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jack-carling/postershop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jack-carling/postershop/issues"
+  },
+  "homepage": "https://github.com/jack-carling/postershop#readme"
+}
