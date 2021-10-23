@@ -1,0 +1,14 @@
+@mixin center($direction: '') {
+  display: flex;
+  justify-content: center;
+  @if $direction == 'column' {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@mixin absolute($distance) {
+  position: absolute;
+  top: $distance;
+  left: $distance;
+}

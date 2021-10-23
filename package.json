@@ -2,14 +2,14 @@
   "name": "postershop",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "dependencies": {
     "node-sass": "^6.0.1"
   },
   "devDependencies": {},
   "scripts": {
     "compile": "node-sass scss -o dist",
-    "watch-style": "node-sass -w scss -o dist"
+    "watch": "node-sass -w scss/ -o dist"
   },
   "repository": {
     "type": "git",

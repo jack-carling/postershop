@@ -1,0 +1,24 @@
+@import 'variables';
+
+section.cards {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 6rem 2rem;
+  div.card {
+    img {
+      max-width: 100%;
+    }
+    button {
+      background-color: $red;
+      appearance: none;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 2rem;
+      font-weight: 700;
+    }
+  }
+}

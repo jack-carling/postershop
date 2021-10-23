@@ -9,5 +9,5 @@ School assignment • [Figma-sketch](https://www.figma.com/file/bPtqAUTBcAcC71DU
 npm run compile
 
 # Watch scss/ folder when developing
-npm run watch-style
+npm run watch
 ```
