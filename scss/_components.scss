@@ -11,7 +11,7 @@ section.cards {
 
 section.large-cards {
   @include main-grid(2rem);
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 6rem;
   div {
     background-color: $white;
@@ -23,5 +23,35 @@ section.large-cards {
   button {
     @include button(1rem 1.5rem);
     margin: 3rem 0 1rem 1rem;
+  }
+}
+
+footer {
+  @include center;
+  section {
+    padding-left: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    div:not(.social) {
+      margin: 2rem 8rem 8rem 0rem;
+      display: flex;
+      flex-direction: column;
+      span:not(:first-of-type) {
+        margin-top: 0.5rem;
+      }
+      div.social {
+        img {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  section.large-cards {
+    grid-template-columns: 1fr;
   }
 }
