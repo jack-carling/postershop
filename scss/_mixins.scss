@@ -1,3 +1,5 @@
+@import 'variables';
+
 @mixin center($direction: '') {
   display: flex;
   justify-content: center;
@@ -11,4 +13,25 @@
   position: absolute;
   top: $distance;
   left: $distance;
+}
+
+@mixin main-grid($gap) {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  gap: $gap;
+  img {
+    max-width: 100%;
+  }
+}
+
+@mixin button($size) {
+  background-color: $red;
+  appearance: none;
+  border: none;
+  padding: $size;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-weight: 700;
 }
